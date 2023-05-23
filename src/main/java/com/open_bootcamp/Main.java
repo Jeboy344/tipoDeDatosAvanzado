@@ -1,9 +1,12 @@
 package com.open_bootcamp;
 
+import java.util.Vector;
+
 public class Main {
 
     public static void main(String[] args) {
 
+        // ToDo STRING
         /* String cadena = "Mensaje DE TEXTo";
 
         int cadenaLen = cadena.length();
@@ -29,6 +32,7 @@ public class Main {
             System.out.println("Caracter actual: " + cadena.charAt(i));
         }
 
+        //ToDo ARRAYS
         int[] arrayUno = {1, 2, 3, 4, 5};
 
         for (int i : arrayUno) {
@@ -90,5 +94,49 @@ public class Main {
         for (String nombre1 : nombres1) {
             System.out.println(nombre1);
         } */
+
+        // ToDo VECTORES
+        Vector<Integer> vector = new Vector(16); // Se puede agregagar la capacidad inicial y la capacidad de incremento una vez superada la capacidad
+        vector.add(1);
+        vector.add(2);
+        vector.add(3);
+        vector.add(4);
+
+        /* System.out.println("Datos del vector: " + vector);
+
+        vector.remove(2);
+        System.out.println("Datos del vector: " + vector);
+
+        System.out.println("Vector tamaño: " + vector.size() + " y capacidad: " + vector.capacity());
+
+        Vector<Integer> vector2 = new Vector();
+        vector2.add(1);
+        vector2.add(2);
+
+        boolean resultado = vector.equals(vector2);
+        System.out.println("Son iguales? " + resultado);
+
+        for (int i : vector) { // Recorrer un vector sin poder acceder a su posición
+            System.out.println("Valor actual en vector: " + i);
+        }
+
+        for (int i = 0; i < vector.size(); i++) { // Recorrer un vector accediendo a su posición
+            if (i % 2 == 0) {
+                vector.remove(i);
+                continue;
+            }
+
+            System.out.println("Valor es: " + vector.get(i) + " en posición: " + i);
+        }
+
+        System.out.println(vector.get(3));
+        vector.remove(3);
+        System.out.println(vector.get(3));
+
+        System.out.println("Capacidad de vector: " + vector.capacity() + " Tamaño: " + vector.size());
+        vector.trimToSize(); // Decrece el tamaño del vector al tamaño actual
+        System.out.println("Capacidad de vector: " + vector.capacity() + " Tamaño: " + vector.size()); */
+
+        // ToDo ARRAYLIST
     }
 }
