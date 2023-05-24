@@ -14,8 +14,16 @@ public class Errores {
         int numeroA = scanner.nextInt();
         int numeroB = scanner.nextInt();
 
-        int resultado = numeroA / numeroB;
-        System.out.println("Resultado: " + resultado);
+        try { // Gestionar yy atrapar errores; se pueden agregar tantas excepciones como hagan faltan
+            int resultado = numeroA / numeroB;
+            System.out.println("Resultado: " + resultado);
+        } catch (ArithmeticException e) {
+            System.out.println("b00m!, excepción es: " + e.getClass());
+        } catch (Exception e) {
+            System.out.println("Estoy en una excepción que no es aritmética");
+        } finally { // El finally siempre se ejecuta
+            System.out.println("finally");
+        }
     }
 
     // 2) Error de compilación: ocurren durante el proceso de compilación de un programa de computadora. La compilación es el proceso de convertir el código fuente de un programa escrito
