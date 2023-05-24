@@ -1,6 +1,7 @@
 package com.open_bootcamp;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Vector;
 
 public class Main {
@@ -166,6 +167,10 @@ public class Main {
 
         for(Object arrayObjeto : lista.toArray()){
             System.out.println(arrayObjeto.toString());
-        } */
+        }
+
+        // ToDo LINKEDLIST
+        LinkedList<String> listaEnlazada = new  LinkedList<String>(); */
+
     }
 }
