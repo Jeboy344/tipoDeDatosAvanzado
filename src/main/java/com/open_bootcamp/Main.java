@@ -1,5 +1,6 @@
 package com.open_bootcamp;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Vector;
@@ -170,7 +171,18 @@ public class Main {
         }
 
         // ToDo LINKEDLIST
-        LinkedList<String> listaEnlazada = new  LinkedList<String>(); */
+        LinkedList<String> listaEnlazada = new  LinkedList<String>();
+
+        // ToDo BigDecimal
+        BigDecimal valorA = new BigDecimal(3.14);
+        BigDecimal valorB = new BigDecimal(3.15);
+
+        // Suma el BigDecimal "valorB" a "ValorA"
+        BigDecimal resultado = valorA.add(valorB);
+
+        // Imprime la suma
+        System.out.println(resultado.toString()); */
+
 
     }
 }
