@@ -23,12 +23,16 @@ public class Errores {
 
     // 3) Error lógico: Basicamente son errores de malas instrucciones dadas al programa, errores humanos
     public static void errorLogico() {
-        int temperatura = 35;
+
+        Scanner scaTemp = new Scanner(System.in);
+        System.out.println("Introduce la temperatura actual: ");
+
+        int temperatura = scaTemp.nextInt();
         if (temperatura < 15) {
             System.out.println("Hace frío");
         } else if (temperatura  < 30) {
             System.out.println("El clima es ideal");
-        }else if (temperatura >= 30){
+        }else if (temperatura > 30){
             System.out.println("Hace calor");
         }
     }
