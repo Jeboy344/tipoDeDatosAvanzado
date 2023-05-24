@@ -1,9 +1,7 @@
 package com.open_bootcamp;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Vector;
+import java.util.*;
 
 public class Main {
 
@@ -181,8 +179,22 @@ public class Main {
         BigDecimal resultado = valorA.add(valorB);
 
         // Imprime la suma
-        System.out.println(resultado.toString()); */
+        System.out.println(resultado.toString());
 
+        // ToDo Mapas
+        HashMap<String, Integer> mapa = new HashMap<>();
+        mapa.put("clave1", 10);
+        mapa.put("clave2", 20);
+        mapa.put("clave3", 30); // Si se duplica la clave de un mapa, se reescribe el valor
+    /*  mapa.replace("clave3", 90); remplaza el valo de una clave
+
+    //  mapa.remove("clave2"); // Remover una clave con su valor del mapa
+    //  System.out.println(mapa.get("clave1"));
+
+        for (Map.Entry elemento : mapa.entrySet()) {
+            System.out.println("Elemento clave es: " + elemento.getKey());
+            System.out.println("Elemento valor es: " + elemento.getValue());
+        } */
 
     }
 }
