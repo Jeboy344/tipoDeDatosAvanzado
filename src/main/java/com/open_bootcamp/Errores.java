@@ -1,5 +1,6 @@
 package com.open_bootcamp;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Errores {
@@ -43,5 +44,16 @@ public class Errores {
         }else if (temperatura > 30){
             System.out.println("Hace calor");
         }
+    }
+
+    // Generar excepciones
+    public static int divide(int A, int B) throws ArithmeticException, IOException {
+        int resultado = 0;
+        try {
+            resultado = A / B;
+        } catch (ArithmeticException e) {
+            throw new IOException();
+        }
+        return resultado;
     }
 }

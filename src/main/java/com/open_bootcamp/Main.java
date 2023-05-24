@@ -8,5 +8,10 @@ public class Main {
 
         errorEjecucion();
         errorLogico();
+        try {
+            divide(4, 0);
+        }   catch (Exception e) {
+        System.out.println("Error");
+        }
     }
 }
