@@ -1,5 +1,6 @@
 package com.open_bootcamp;
 
+import java.util.ArrayList;
 import java.util.Vector;
 
 public class Main {
@@ -93,7 +94,7 @@ public class Main {
 
         for (String nombre1 : nombres1) {
             System.out.println(nombre1);
-        } */
+        }
 
         // ToDo VECTORES
         Vector<Integer> vector = new Vector(16); // Se puede agregagar la capacidad inicial y la capacidad de incremento una vez superada la capacidad
@@ -102,7 +103,7 @@ public class Main {
         vector.add(3);
         vector.add(4);
 
-        /* System.out.println("Datos del vector: " + vector);
+        System.out.println("Datos del vector: " + vector);
 
         vector.remove(2);
         System.out.println("Datos del vector: " + vector);
@@ -135,8 +136,36 @@ public class Main {
 
         System.out.println("Capacidad de vector: " + vector.capacity() + " Tamaño: " + vector.size());
         vector.trimToSize(); // Decrece el tamaño del vector al tamaño actual
-        System.out.println("Capacidad de vector: " + vector.capacity() + " Tamaño: " + vector.size()); */
+        System.out.println("Capacidad de vector: " + vector.capacity() + " Tamaño: " + vector.size());
 
         // ToDo ARRAYLIST
+        // CapacidadArrayList = CapacidadArrayList + (CapacidadArrayList * 0.5); Los ArrayList solo aumentan el 50% de su capacidad inicial
+        ArrayList<String> lista = new ArrayList<String>();
+        lista.add("ElementoA");
+        lista.add("ElementoB");
+        lista.add("ElementoC");
+
+        lista.remove(2);
+        System.out.println("Contenido: " + lista);
+
+        for (String nombre : lista) {
+            System.out.println(nombre);
+        }
+
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.println(lista.get(i));
+        }
+
+        String array[] = new String[lista.size()];
+        for (int i = 0; i < lista.size(); i++) {
+            array[i] = lista.get(i);
+        }
+        for (String elemento : array) {
+            System.out.println("Elemento es: " + elemento);
+        }
+
+        for(Object arrayObjeto : lista.toArray()){
+            System.out.println(arrayObjeto.toString());
+        } */
     }
 }
